@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>Management Product</title>
+    <link rel="stylesheet" href="management.css" />
+  </head>
+  <body>
+    <header>
+      <h2>Management Product</h2>
+    </header>
+    <main>
+      <div class="input-product">
+        <input type="text" id="nama-product" placeholder="Nama Product" />
+        <input type="number" id="harga-product" placeholder="Harga Product" />
+        <button class="tambah-product" onclick="tambahProduct()" type="submit">Tambah Barang</button>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>Nama Barang</th>
+            <th>Harga Barang</th>
+            <th>Aksi</th>
+          </tr>
+        </thead>
+        <tbody id="isi-product"></tbody>
+      </table>
+      <div class="total-harga" id="total-harga">Total Harga: Rp. 0</div>
+    </main>
+    <footer></footer>
+    <script src="management.js"></script>
+  </body>
+</html>
